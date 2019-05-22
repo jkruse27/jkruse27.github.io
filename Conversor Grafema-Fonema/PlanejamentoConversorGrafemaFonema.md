@@ -1,6 +1,6 @@
 # Fluxograma de Componentes Para o Conversor Grafema-Fonema
 # Objetivo
-	O objetivo do conversor grafema-fonema é receber um texto e convertê-lo para os seus equivalentes fonemas, de forma a possibilitar a implementação de um alinhador de sílabas fonéticas no qual cada sílaba fonética será associada à um período temporal de um arquivo de áudio do texto lido.
+O objetivo do conversor grafema-fonema é receber um texto e convertê-lo para os seus equivalentes fonemas, de forma a possibilitar a implementação de um alinhador de sílabas fonéticas no qual cada sílaba fonética será associada à um período temporal de um arquivo de áudio do texto lido.
 
 # Componentes
 Componentes  |  Descrição
@@ -59,7 +59,7 @@ A implementação dessa etapa corresponderá à simples verificação de alguns 
 
 # Processo de Desenvolvimento
 
-	Etapas seguidas para o desenvolvimento do projeto
+Etapas seguidas para o desenvolvimento do projeto
 
 1. Criação do dicionário de exceções
 1. Implementação da componente de localização da vogal tônica
@@ -70,7 +70,7 @@ A implementação dessa etapa corresponderá à simples verificação de alguns 
 
 # Processo de Execução do Programa
 
-	Etapas que o programa seguirá quando for realizar a conversão
+Etapas que o programa seguirá quando for realizar a conversão
 
 1. Separar o texto em palavras
 1. Para cada palavra:
