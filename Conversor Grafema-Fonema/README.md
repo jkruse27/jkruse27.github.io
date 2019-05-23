@@ -37,7 +37,7 @@ Sua implementação seria tão simples quanto verificar os casos em que dois ou 
 
 ## Probabilístico (Conversor)
 ### Descrição
-Para a identificação do fonema representado pelo grafema será utilizada uma função probabilística que representará a probabilidade de um certo fonema ser o fonema que representa o grafema, sendo o fonema de maior probabilidade o escolhido como a conversão. Ele será baseado no dicionário que será feito e encontrará a probabilidade baseado no número de palavras contendo uma certa pronuncia do grafema em um determinado contexto na palavra. Essa será a etapa responsável pela conversão propriamente dita.
+Para a identificação do fonema representado pelo grafema será utilizada uma função probabilística que representará a probabilidade de um certo fonema ser o fonema que representa o grafema, sendo o fonema de maior probabilidade o escolhido como a conversão. Ele será baseado no dicionário que será feito e encontrará a probabilidade baseado no número de palavras contendo uma certa pronuncia do grafema em um determinado contexto na palavra. Essa será a etapa responsável pela conversão propriamente dita. Antes da aplicação do probabilístico, os grafemas que possuem apenas um fonema respectivo já serão substituídos, de forma a nos oferecerem maiores informações quanto ao contexto em que os grafemas restantes se encontram para direcionar melhor o cálculo.
 ### Implementação
 Ainda não foi decidido o modelo probabilístico que será adotado.
 
