@@ -2,18 +2,20 @@
 # Objetivo
 O objetivo do conversor grafema-fonema é receber um texto e convertê-lo para os seus equivalentes fonemas, de forma a possibilitar a implementação de um alinhador de sílabas fonéticas no qual cada sílaba fonética será associada à um período temporal de um arquivo de áudio do texto lido.
 
-# Componentes
+# Overview
 Componentes  |  Descrição
 ------------ | -----------
-**Dicionário de exceções** | Lista contendo palavras que não seguem a regra uma das opções de palavras homônimas
-**Identificador de Vogal Tônica**| Encontra a vogal tônica a partir da aplicação inversa das regras de acentuação do português
+**Dicionário de exceções**         | Lista contendo palavras que não seguem a regra uma das opções de palavras homônimas
+**Identificador de Vogal Tônica**  | Encontra a vogal tônica a partir da aplicação inversa das regras de acentuação do português
 **Simplificador de Palavras (possibilidade)** | Reduz dígrafos e outras representações de grafemas para um único caracter especial, permitindo a utilização de uma conversão 1 x 01
-**Probabilístico** | Encontra o fonema mais provável a partir do contexto de grafemas em que se encontra, classe gramatical, etc utilizando probabilidades obtidas de um dicionário grafema-fonema (forma de implementá-lo e fonte da probabilidade ainda incerta)
-**Classificador Sintático** | Utilizaremos um classificador já implementado
-**Dicionário Grafema-Fonema** | Poderá ser necessária a criação de um dicionário contendo palavras e suas conversões para fonemas no português brasileiro e seguindo a convenção fonética utilizada no projeto para o cálculo probabilístico
-**Análisa na Frase**| Depois da conversão de cada palavra, será necessário verificar se, no contexto da frase completa, os fonemas terminais não se unem com os iniciais da palavra seguinte ou alteram sua pronuncia devido à elas
+**Probabilístico**                 | Encontra o fonema mais provável a partir do contexto de grafemas em que se encontra, classe gramatical, etc utilizando probabilidades obtidas de um dicionário grafema-fonema (forma de implementá-lo e fonte da probabilidade ainda incerta)
+**Classificador Sintático**        | Utilizaremos um classificador já implementado
+**Dicionário Grafema-Fonema**      | Poderá ser necessária a criação de um dicionário contendo palavras e suas conversões para fonemas no português brasileiro e seguindo a convenção fonética utilizada no projeto para o cálculo probabilístico
+**Análisa na Frase**               | Depois da conversão de cada palavra, será necessário verificar se, no contexto da frase completa, os fonemas terminais não se unem com os iniciais da palavra seguinte ou alteram sua pronuncia devido à elas
+**Separador Silábico**             | Separa as sílabas da palavra
+**Separador de Sílabas Fonéticas** | Separa as sílabas fonéticas da palavra convertida
 
-# Etapas
+# Componentes
 ## Dicionário de exceções
 ### Descrição
 O primeiro componente a ser implementado e estruturado será o *dicionário de exceções*
@@ -57,6 +59,19 @@ Após todas as palavras terem sido convertidas para seus respectivos fonemas, se
 ### Implementação
 A implementação dessa etapa corresponderá à simples verificação de alguns casos específicos em que essa modificação ocorre.
 
+## Separador Silábico
+### Descrição
+Para a identificação de alguns fonemas, basta saber onde o grafema se encontra dentro da sílaba, como é o exemplo do grafema "s", que possui uma representação fonética "S" quando este se encontra no final de uma sílaba. Com isso, será necessária a divisão da palavra em sílabas para que está análise seja realizada, o que cria a necessidade de um separador silábico.
+### Implementação
+No português brasileiro, a separação silábica tem regras e já existem algoritmos e aplicações que realizam essa tarefa (https://www.aclweb.org/anthology/W13-4812).
+
+## Separador de Sílabas Fonéticas
+### Descrição
+A última etapa da conversão é a divisão do texto convertido em sílabas fonéticas, que em nosso contexto consistem em unidades de um ou mais segmentos durante os quais há apenas um pulso e um único pico de saliência sonora que é a vogal, sendo definida pela noção de unidade VV (unidade delimitada por dois inícios de vogais).
+### Implementação
+Será implementado de forma semelhante ao separador silábico, porém utilizando regras diferentes.
+
+
 # Processo de Desenvolvimento
 
 Etapas seguidas para o desenvolvimento do projeto
@@ -65,8 +80,10 @@ Etapas seguidas para o desenvolvimento do projeto
 1. Implementação da componente de localização da vogal tônica
 1. Criação do dicionário de associações de palavras e seus fonemas
 1. (opcional) Criação do simplificador de grafemas
+1. Implementar o separador silábico
 1. Implementação do aparato probabilístico
 1. Implementação da análise da frase completa
+1. Implementação do separador de sílabas fonéticas
 
 # Processo de Execução do Programa
 
@@ -80,5 +97,8 @@ Etapas que o programa seguirá quando for realizar a conversão
 	1. Utilizar a conversão da exceção e seguir para a próxima palavra
 	* Se não for exceção:
 	1. Encontrar a vogal tônica
+	1. Separar as sílabas
+	1. Converter os grafemas que possuem apenas 1 fonema respectivo
 	1. Realizar a conversão utilizando a probabilidade
 1. Verificar o contexto da frase
+1. Separar as sílabas fonéticas da frase
