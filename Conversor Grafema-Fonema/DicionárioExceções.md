@@ -5,6 +5,7 @@ http://petletras.paginas.ufsc.br/files/2016/10/Livro-Texto_Fonetica_Fonologia_PB
 ## Conversões Únicas
 Grafemas que possuem apenas um fonema correspondente, ou seja, quando vistos podem ser
 substituídos diretamente:
+
 Grafema | Fonema
 ------- | ------
 b | b
