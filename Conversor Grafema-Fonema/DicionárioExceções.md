@@ -2,6 +2,7 @@
 
 ## Regras Fonéticas
 http://petletras.paginas.ufsc.br/files/2016/10/Livro-Texto_Fonetica_Fonologia_PB_UFSC.pdf
+https://grad.letras.ufmg.br/arquivos/monitoria/AULA%208-%20FONEMICa%20do%20pb.pdf
 ## Conversões Únicas
 Grafemas que possuem apenas um fonema correspondente, ou seja, quando vistos podem ser
 substituídos diretamente:
