@@ -6,6 +6,7 @@ http://petletras.paginas.ufsc.br/files/2016/10/Livro-Texto_Fonetica_Fonologia_PB
 Grafemas que possuem apenas um fonema correspondente, ou seja, quando vistos podem ser
 substituídos diretamente:
 Grafema | Fonema
+----|------
 b | b
 f | f
 j | zh
@@ -51,8 +52,8 @@ qu | k
     * Se não for um encontro vocálico nasal, corresponde ao fonema "m"
     * Caso seja um encontro os fonemas correspondentes se encontram abaixo
   * n
-  * Se não for um encontro vocálico nasal, corresponde ao fonema "n"
-  * Caso seja um encontro os fonemas correspondentes se encontram abaixo
+    * Se não for um encontro vocálico nasal, corresponde ao fonema "n"
+    * Caso seja um encontro os fonemas correspondentes se encontram abaixo
   * r
     * No início da palavra corresponde ao fonema "h"
     * Depois do grafema "n" corresponde ao fonema "h"
@@ -66,3 +67,4 @@ qu | k
 ### Exceções à Regra Que Devem Ser Adicionadas ao Dicionário
 1. México
 1. Subsídio (?)
+1.
