@@ -1,73 +1,25 @@
 # Dicionário de Exceções
 
 ## Regras Fonéticas
-http://petletras.paginas.ufsc.br/files/2016/10/Livro-Texto_Fonetica_Fonologia_PB_UFSC.pdf
+### Determinação da Sílaba Tônica
+1. Verificar a presença de acentos e sinais gráficos
+    1. Se houver acento: 
+        2. a vogal acentuada é a tônica (acento agudo e circunflexo tem preferncia ao til)  
+    1. Se não houver acento:
+        2. Se a palavra for terminada em a(s), e(s), i(s), o(s), u(s), ei(s), eu(s), oi(s):
+            3. A vogal na penúltima sílaba é a tônica
+        2. Caso contrário:
+            3. A vogal na última sílaba é a tônica  
 
-https://grad.letras.ufmg.br/arquivos/monitoria/AULA%208-%20FONEMICa%20do%20pb.pdf
-## Conversões Únicas
-Grafemas que possuem apenas um fonema correspondente, ou seja, quando vistos podem ser
-substituídos diretamente:
-
-Grafema | Fonema
-------- | ------
-b | b
-f | f
-j | zh
-k | k
-p | p
-t | t
-v | v
-z | z
-ch | sh
-ss | s
-xc | s
-sç | s
-rr | h
-lh | lh
-qu | k
-ç | s
-
-## Conversões Que Dependem Do Contexto
-### Consoantes
-  * s
-    * Se estiver entre vogais corresponde ao fonema "z"
-    * No início da palavra corresponde ao fonema "s"
-    * No final de uma sílaba corresponde ao fonema "S"
-    * Entre consoante anasalada "n" e vogal corresponde ao fonema "z" (verificar)
-    * No final da palavra:
-      * Se indicar o plural, corresponde ao fonema "s"
-      * Caso contrário, corresponde ao fonema "z"
-  * g
-    * Antes das vogais "a", "o" e "u" corresponde ao fonema "g"
-    * Antes das vogais "i" e "e" corresponde ao fonema "zh"
-    * Antes de consoante corresponde ao fonema "g"
-  * c
-    * Antes das vogais "a", "u" e "o" corresponde ao fonema "k"
-    * Antes das vogais "e" e "i" corresponde ao fonema "s"
-    * Antes de consoantes corresponde ao fonema "c"
-  * sc
-    * Se o "c" corresponder ao fonema "s", corresponde ao fonema "s"
-    * Se o "c" corresponder ao fonema "c", corresponde aos fonemas "sc"
-  * d
-    * Antes das vogais "a", "e", "o" e "u" corresponde ao fonema "d"
-    * Antes da vogal "i" corresponde ao fonema "dZ"
-  * m
-    * Se não for um encontro vocálico nasal, corresponde ao fonema "m"
-    * Caso seja um encontro os fonemas correspondentes se encontram abaixo
-  * n
-    * Se não for um encontro vocálico nasal, corresponde ao fonema "n"
-    * Caso seja um encontro os fonemas correspondentes se encontram abaixo
-  * r
-    * No início da palavra corresponde ao fonema "h"
-    * Depois do grafema "n" corresponde ao fonema "h"
-    *
-
-
-### Vogais
-
-### Vocálicos Nasais
-
-### Exceções à Regra Que Devem Ser Adicionadas ao Dicionário
+### Regras Fonéticas Básicas (imagens de "ALGORITMOS DE PROCESSAMENTO DA LINGUAGEM E SÍNTESE DE VOZ COM EMOÇÕES APLICADOS A UM CONVERSOR TEXTO-FALA BASEADO EM HMM" - da Silva, Denilson da Cruz )
+![](regras1.ong?raw=true "Regras de escolha de fonemas")
+![](regras2.png?raw=true "Regras de escolha de fonemas")
+![](regras3.png?raw=true "Regras de escolha de fonemas")
+![](regras4.png?raw=true "Regras de escolha de fonemas")
+## Exceções à Regra Que Devem Ser Adicionadas ao Dicionário
 1. México
 1. Subsídio (?)
 1.
+
+## Bibliografia
+"ALGORITMOS DE PROCESSAMENTO DA LINGUAGEM E SÍNTESE DE VOZ COM EMOÇÕES APLICADOS A UM CONVERSOR TEXTO-FALA BASEADO EM HMM" - da Silva, Denilson da Cruz 
