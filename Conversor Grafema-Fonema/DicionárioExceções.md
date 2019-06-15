@@ -16,6 +16,8 @@
 ![](regras2.png?raw=true "Regras de escolha de fonemas")
 ![](regras3.png?raw=true "Regras de escolha de fonemas")
 ![](regras4.png?raw=true "Regras de escolha de fonemas")
+
+Outros fonemas que não foram englobados adequadamente pelas regras serão decididos utilizando estatística.
 ## Exceções à Regra Que Devem Ser Adicionadas ao Dicionário
 1. México
 1. Subsídio (?)
