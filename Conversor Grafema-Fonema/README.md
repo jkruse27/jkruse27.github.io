@@ -76,29 +76,29 @@ Será implementado de forma semelhante ao separador silábico, porém utilizando
 
 Etapas seguidas para o desenvolvimento do projeto
 
-1. Criação do dicionário de exceções
-1. Implementação da componente de localização da vogal tônica
-1. Criação do dicionário de associações de palavras e seus fonemas
-1. (opcional) Criação do simplificador de grafemas
-1. Implementar o separador silábico
-1. Implementação do aparato probabilístico
-1. Implementação da análise da frase completa
-1. Implementação do separador de sílabas fonéticas
+1. Criação do dicionário de exceções [x]
+1. Implementação da componente de localização da vogal tônica []
+1. Criação do dicionário de associações de palavras e seus fonemas []
+1. (opcional) Criação do simplificador de grafemas [x]
+1. Implementar o separador silábico []
+1. Implementação do aparato probabilístico []
+1. Implementação da análise da frase completa []
+1. Implementação do separador de sílabas fonéticas []
 
 # Processo de Execução do Programa
 
 Etapas que o programa seguirá quando for realizar a conversão
 
-1. Separar o texto em palavras
+1. Separar o texto em palavras [x]
 1. Para cada palavra:
-	1. Encontrar classe gramatical
-	1. Verificar se é uma exceção
+	1. Encontrar classe gramatical []
+	1. Verificar se é uma exceção [x]
 	* Se for exceção:
-	1. Utilizar a conversão da exceção e seguir para a próxima palavra
+	1. Utilizar a conversão da exceção e seguir para a próxima palavra [x]
 	* Se não for exceção:
-	1. Encontrar a vogal tônica
-	1. Separar as sílabas
-	1. Converter os grafemas que possuem apenas 1 fonema respectivo
-	1. Realizar a conversão utilizando a probabilidade
-1. Verificar o contexto da frase
-1. Separar as sílabas fonéticas da frase
+	1. Encontrar a vogal tônica []
+	1. Separar as sílabas []
+	1. Converter os grafemas que possuem apenas 1 fonema respectivo [x]
+	1. Realizar a conversão utilizando a probabilidade []
+1. Verificar o contexto da frase []
+1. Separar as sílabas fonéticas da frase []

@@ -34,6 +34,8 @@ class PhonemeRules:
                 new_word += '@'
             elif(i < (len(word) - 1) and[i] == 'c' and word[i + 1] == 'h'):
                 new_word += '%'
+	    elif(i < (len(word) - 1) and word[i] == 'r' and word[i + 1] == 'r'):
+		new_word += '^'
             else:
                 new_word += word[i]
 
@@ -50,10 +52,41 @@ class PhonemeRules:
     def apply_rule(self, word, char_num):
         size = len(word)
         word = word.lower()
-        char = word[char_num].lower()
+        char = word[char_num]
         ret = None
         if (char == 'p'):
             ret = 'p'
+	elif(char == 't'):
+	    if(word[char_num + 1] == 'i' or word[char_num + 1] == 'í'):
+		ret = 'tS'
+	    elif(word[char_num + 1] == 'n'):
+		ret = 'tS'
+	    elif(word[char_num + 1] == 'e'):
+		if(word.find('te') == size - 2):
+		    ret = 'tS'
+		else:
+		    ret = 't'
+	    else:
+		ret = 't'
+	elif(char == 'd'):
+	    if(word[char_num + 1] == 'i' or word[char_num + 1] == 'í'):
+		ret = 'dZ'
+	    elif(word[char_num + 1] == 'n'):
+		ret = 'dZ'
+	    elif(word[char_num + 1] == 'e'):
+		if(word.find('de') == size - 2):
+		    ret = 'dZ'
+		else:
+		    ret = 'd'
+	    else:
+		ret = 'd'
+	elif(char == '^'):
+	    ret = 'rr'
+	elif(char = 'r'):
+	    if(char_num == 0):
+		ret = 'rr'
+	    else:
+		ret = 'R'
         elif (char == 'v'):
             ret = 'v'
         elif (char == 't'):
