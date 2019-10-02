@@ -7,17 +7,17 @@ a tendência é que a vogal tônica do substantivo seja fechada e a do
 verbo aberta, independentemente da vogal.
  
 * Exemplos:
-        * acerto (correção) e acerto (verbo acertar);
-        * acordo (combinação) e acordo (verbo acordar);
-        * apoio (suporte) e apoio (verbo apoiar);
-        * boto (golfinho) e boto (verbo botar);
-        * choro (pranto) e choro (verbo chorar);
-        * começo (princípio) e começo (verbo começar);
-        * governo (ministério) e governo (verbo governar);
-        * jogo (entretenimento) e jogo (verbo jogar);
-        * molho (caldo) e molho (verbo molhar);
-        * olho (órgão da visão) e olho (verbo olhar);
-        * seca (enxuta) e seca (verbo secar);
+    * acerto (correção) e acerto (verbo acertar);
+    * acordo (combinação) e acordo (verbo acordar);
+    * apoio (suporte) e apoio (verbo apoiar);
+    * boto (golfinho) e boto (verbo botar);
+    * choro (pranto) e choro (verbo chorar);
+    * começo (princípio) e começo (verbo começar);
+    * governo (ministério) e governo (verbo governar);
+    * jogo (entretenimento) e jogo (verbo jogar);
+    * molho (caldo) e molho (verbo molhar);
+    * olho (órgão da visão) e olho (verbo olhar);
+    * seca (enxuta) e seca (verbo secar);
 	* sobre (acerca de) e sobre (verbo sobrar);
 	* torre (construção elevada) e torre (verbo torrar);
 	* força (pujança) e força (verbo forçar);
