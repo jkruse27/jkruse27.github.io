@@ -1,0 +1,11 @@
+.box {
+	resize: none;
+	border : 2px solid black;
+	height:125px;
+}
+
+
+.division {
+	display:inline-block;
+	text-align: center;
+}

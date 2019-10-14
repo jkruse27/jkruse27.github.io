@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Conversor Grafema-Fonema</title>
+		<script src="client.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h1 align="center">Conversor Grafema-Fonema</h1>
+		<div id="grapheme_box" class="division" style="text-align:center">
+			<p align="center">Grafemas</p>
+			<textarea name="grapheme" cols="90" rows="15" class="box" placeholder="Ecreva os grafemas aqui."></textarea>
+		</div>
+		<div id="phoneme_box" class="division">
+			<p align="center">Fonemas</p>
+			<textarea name="phoneme" cols="90" rows="15" class="box">
+			</textarea>
+		</div>
+		<button type="submit" id="button" onClick="onClick()">Converter</button>
+	</body>
+</html>
